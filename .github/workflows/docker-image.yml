@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./springbootexamproject
-          file: ./sspringbootexamproject/backend.Dockerfile
+          file: ./springbootexamproject/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-labexam-backend:latest
 
